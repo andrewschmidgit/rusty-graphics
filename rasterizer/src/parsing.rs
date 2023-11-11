@@ -38,11 +38,11 @@ pub struct Config {
     pub height: u32,
 
     #[arg(long, value_parser = parse_vertex)]
-    pub vertex_1: Point,
+    pub v1: Point,
     #[arg(long, value_parser = parse_vertex)]
-    pub vertex_2: Point,
+    pub v2: Point,
     #[arg(long, value_parser = parse_vertex)]
-    pub vertex_3: Point,
+    pub v3: Point,
 }
 
 impl Config {
@@ -59,9 +59,9 @@ impl Config {
             }
         };
 
-        vertex_validator(&self.vertex_1)?;
-        vertex_validator(&self.vertex_2)?;
-        vertex_validator(&self.vertex_3)?;
+        vertex_validator(&self.v1)?;
+        vertex_validator(&self.v2)?;
+        vertex_validator(&self.v3)?;
 
         Ok(())
     }

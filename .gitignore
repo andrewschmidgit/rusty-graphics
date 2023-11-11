@@ -3,3 +3,6 @@ target/
 
 # Ignore generated images
 *.png
+
+# Ignore mac crap
+.DS_Store
