@@ -1,0 +1,5 @@
+# Ignores build artifacts
+target/
+
+# Ignore generated images
+*.png
